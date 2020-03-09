@@ -1,0 +1,39 @@
+:root {
+  --clr-dark: #ABB2B9;
+  --clr-primary: #EAECEE ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Spartan:400,700&display=swap');
+
+.App {
+  min-height: 100vh;
+  min-width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 5fr 3fr;
+
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.5rem;
+}
+
+.Cockpit {
+  background: linear-gradient(var(--clr-primary), var(--clr-dark));
+  grid-column: 1 / 4;
+  grid-row: 3 / span 1;
+}
+
+.Topbar {
+  background: linear-gradient(var(--clr-dark), var(--clr-primary));
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+

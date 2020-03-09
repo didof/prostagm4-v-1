@@ -1,0 +1,30 @@
+.card {
+    margin: 5px auto;
+    padding: 3px;
+    background-color: #F2F4F4;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+
+    transform: scale(1);
+    transition: 0.2s 0.2s ease;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:hover {
+    background-color: #FDFEFE;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.card .mild {
+    color: #F39C12;
+}
+.card .serious {
+    color: #DC7633;
+}
+.card .max {
+    color: #A93226;
+}
+    
